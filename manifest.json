@@ -1,0 +1,20 @@
+{
+    "name": "Youtube Archive Highlighter",
+    "description": "アーカイブ動画を目立たせるやつ",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "hello_extensions.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
